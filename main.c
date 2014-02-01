@@ -88,7 +88,7 @@ int32Types int32Struct[ARRAY_MAX];
 
 int main()
 {
-	
+	printf("pointer to char size %d\n", sizeof(char*));
 
 	srand(32);
 	int counter = 0;
