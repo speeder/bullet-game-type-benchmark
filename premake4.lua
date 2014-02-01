@@ -1,10 +1,10 @@
 -- A solution contains projects, and defines the available configurations
-solution("BUlletTypeBenchmark");
+solution("BulletTypeBenchmark");
 configurations("Release");
 platforms({"x32", "x64"});
  
 -- A project defines one build target
-project("BUlletTypeBenchmark");
+project("BulletTypeBenchmark");
 kind("ConsoleApp");
 language("C");
 files({ "**.h", "**.c" });
