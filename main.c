@@ -97,7 +97,7 @@ int32Types int32Struct[ARRAY_MAX];
 
 int main()
 {
-	printf("pointer to char size %d\n", sizeof(char*));
+	printf("pointer to char size %zu\n", sizeof(char*));
 
 	srand(32);
 	int counter = 0;
@@ -182,7 +182,7 @@ int main()
 		elapsedTime = ((double) (end - start)) / CLOCKS_PER_SEC;
 		defaultAverageTime+=elapsedTime/LOOPS;
 
-		printf("default types array[%d] size %d struct size %d, int size %d, short size %d, unsigned char size %d, calculation speed %f\n", ARRAY_MAX, sizeof defaultStruct, sizeof(defaultTypes), sizeof(int), sizeof(short), sizeof(unsigned char), elapsedTime);
+		printf("default types array[%zu] size %zu struct size %zu, int size %zu, short size %zu, unsigned char size %zu, calculation speed %f\n", ARRAY_MAX, sizeof defaultStruct, sizeof(defaultTypes), sizeof(int), sizeof(short), sizeof(unsigned char), elapsedTime);
 
 		counter = 0;
 		start = clock();
@@ -196,7 +196,7 @@ int main()
 		elapsedTime = ((double) (end - start)) / CLOCKS_PER_SEC;
 		fastAverageTime+=elapsedTime/LOOPS;
 
-		printf("fast types array[%d] size %d struct size %d, int_fast16_t size %d, int_fast8_t size %d, uint_fast8_t size %d, calculation speed %f\n", ARRAY_MAX, sizeof fastStruct, sizeof(fastTypes), sizeof(uint_fast16_t), sizeof(int_fast8_t), sizeof(uint_fast8_t), elapsedTime);
+		printf("fast types array[%zu] size %zu struct size %zu, int_fast16_t size %zu, int_fast8_t size %zu, uint_fast8_t size %zu, calculation speed %f\n", ARRAY_MAX, sizeof fastStruct, sizeof(fastTypes), sizeof(uint_fast16_t), sizeof(int_fast8_t), sizeof(uint_fast8_t), elapsedTime);
 
 		counter = 0;
 		start = clock();
@@ -210,7 +210,7 @@ int main()
 		elapsedTime = ((double) (end - start)) / CLOCKS_PER_SEC;
 		leastAverageTime+=elapsedTime/LOOPS;
 
-		printf("least types array[%d] size %d struct size %d, int_least16_t size %d, int_least8_t size %d, uint_least8_t size %d, calculation speed %f\n", ARRAY_MAX, sizeof leastStruct, sizeof(leastTypes), sizeof(int_least16_t), sizeof(int_least8_t), sizeof(uint_least8_t), elapsedTime);
+		printf("least types array[%zu] size %zu struct size %zu, int_least16_t size %zu, int_least8_t size %zu, uint_least8_t size %zu, calculation speed %f\n", ARRAY_MAX, sizeof leastStruct, sizeof(leastTypes), sizeof(int_least16_t), sizeof(int_least8_t), sizeof(uint_least8_t), elapsedTime);
 
 		counter = 0;
 		start = clock();
@@ -224,7 +224,7 @@ int main()
 		elapsedTime = ((double) (end - start)) / CLOCKS_PER_SEC;
 		exactAverageTime+=elapsedTime/LOOPS;
 
-		printf("exact types array[%d] size %d struct size %d, int16_t size %d, int8_t size %d, uint8_t size %d, calculation speed %f\n", ARRAY_MAX, sizeof exactStruct, sizeof(exactTypes), sizeof(int16_t), sizeof(int8_t), sizeof(uint8_t), elapsedTime);
+		printf("exact types array[%zu] size %zu struct size %zu, int16_t size %zu, int8_t size %zu, uint8_t size %zu, calculation speed %f\n", ARRAY_MAX, sizeof exactStruct, sizeof(exactTypes), sizeof(int16_t), sizeof(int8_t), sizeof(uint8_t), elapsedTime);
 
 		counter = 0;
 		start = clock();
@@ -238,7 +238,7 @@ int main()
 		elapsedTime = ((double) (end - start)) / CLOCKS_PER_SEC;
 		floatAverageTime+=elapsedTime/LOOPS;
 
-		printf("float types array[%d] size %d struct size %d, float size %d, float size %d, unsigned char size %d, calculation speed %f\n", ARRAY_MAX, sizeof floatStruct, sizeof(floatTypes), sizeof(float), sizeof(float), sizeof(unsigned char), elapsedTime);
+		printf("float types array[%zu] size %zu struct size %zu, float size %zu, float size %zu, unsigned char size %zu, calculation speed %f\n", ARRAY_MAX, sizeof floatStruct, sizeof(floatTypes), sizeof(float), sizeof(float), sizeof(unsigned char), elapsedTime);
 
 		counter = 0;
 		start = clock();
@@ -252,7 +252,7 @@ int main()
 		elapsedTime = ((double) (end - start)) / CLOCKS_PER_SEC;
 		doubleAverageTime+=elapsedTime/LOOPS;
 
-		printf("double types array[%d] size %d struct size %d, double size %d, double size %d, unsigned char size %d, calculation speed %f\n", ARRAY_MAX, sizeof doubleStruct, sizeof(doubleTypes), sizeof(double), sizeof(double), sizeof(unsigned char), elapsedTime);
+		printf("double types array[%zu] size %zu struct size %zu, double size %zu, double size %zu, unsigned char size %zu, calculation speed %f\n", ARRAY_MAX, sizeof doubleStruct, sizeof(doubleTypes), sizeof(double), sizeof(double), sizeof(unsigned char), elapsedTime);
 
 		counter = 0;
 		start = clock();
@@ -266,7 +266,7 @@ int main()
 		elapsedTime = ((double) (end - start)) / CLOCKS_PER_SEC;
 		int16AverageTime+=elapsedTime/LOOPS;
 
-		printf("int16 types array[%d] size %d struct size %d, int16_t size %d, int16_t size %d, unsigned char size %d, calculation speed %f\n", ARRAY_MAX, sizeof int16Struct, sizeof(int16Types), sizeof(int16_t), sizeof(int16_t), sizeof(unsigned char), elapsedTime);
+		printf("int16 types array[%zu] size %zu struct size %zu, int16_t size %zu, int16_t size %zu, unsigned char size %zu, calculation speed %f\n", ARRAY_MAX, sizeof int16Struct, sizeof(int16Types), sizeof(int16_t), sizeof(int16_t), sizeof(unsigned char), elapsedTime);
 
 		counter = 0;
 		start = clock();
@@ -280,7 +280,7 @@ int main()
 		elapsedTime = ((double) (end - start)) / CLOCKS_PER_SEC;
 		int32AverageTime+=elapsedTime/LOOPS;
 
-		printf("int32 types array[%d] size %d struct size %d, int32_t size %d, int32_t size %d, unsigned char size %d, calculation speed %f\n", ARRAY_MAX, sizeof int32Struct, sizeof(int32Types), sizeof(int32_t), sizeof(int32_t), sizeof(unsigned char), elapsedTime);
+		printf("int32 types array[%zu] size %zu struct size %zu, int32_t size %zu, int32_t size %zu, unsigned char size %zu, calculation speed %f\n", ARRAY_MAX, sizeof int32Struct, sizeof(int32Types), sizeof(int32_t), sizeof(int32_t), sizeof(unsigned char), elapsedTime);
 
 		++counter2;
 	}
