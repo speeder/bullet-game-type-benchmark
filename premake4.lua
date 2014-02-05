@@ -8,6 +8,7 @@ project("BulletTypeBenchmark");
 kind("ConsoleApp");
 language("C");
 files({ "**.h", "**.c" });
+defines { "__USE_MINGW_ANSI_STDIO=1" }
 
 configuration("x32");
 defines({ "NDEBUG" });
